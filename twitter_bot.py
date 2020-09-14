@@ -57,7 +57,7 @@ except:
 
 while 1:
     time = datetime.now().strftime("%M")
-    if time == 42:
+    if time%5 == 0:
         fav_media = fav_media('archillect')
         dl_image(fav_media)
         merge_image('merge.jpg', 'dl.jpg')
